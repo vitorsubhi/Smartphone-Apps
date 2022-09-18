@@ -1,0 +1,151 @@
+::-webkit-scrollbar {
+    display: none;
+}
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  #header {
+    display: block;
+    height: 15vh;
+    flex-shrink: 0;
+    background-color: #00984a;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  #content {
+    background-color: red;
+    display: block;
+    z-index: 9999;
+    flex: 1;
+    height:77vh;
+    overflow: scroll;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #content h6 {
+    text-align: center;
+  }
+
+  #hup {
+    display: flex;
+    height: 100%;
+  }
+  #hleft {
+    margin-top: 4vh;
+    text-align: center;
+    width: 20%;
+  }
+  #menu {
+    display: flex;
+    height: 15%;
+  }
+  #hright {
+    margin-top: 4vh;
+    width: 70%;
+    color: white;
+    
+  }
+  #hleft button {
+    background: transparent;
+    border-width: 0px;
+    color: rgb(255, 255, 255);
+    height: 4rem;
+  }
+  
+  #contentVehicles {
+    display: hidden;
+    height: 100%;
+  }
+  #pageVehicles {
+    height: 100%;
+  }
+  #titleVehicles {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  #vehicle {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    /*background-color: rgb(236, 255, 236);*/
+    box-shadow: 0 8px 21px rgb(0 0 0 / 20%);
+    border: 1px solid rgba(0, 0, 0, 0.637);
+  }
+  #vright {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+  }
+  #vleft {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #vleft img {
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #vright_bot {
+    display: flex;
+    width: 100%;
+  }
+  #benefactorSell {
+    width: 45%;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #87db26;
+    font-size: 10px;
+    color: #004a04;
+    border: 1px solid rgba(0,0,0,0.35);
+  }
+  #benefactorTax {
+    width: 45%;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 94, 0);
+    font-size: 10px;
+    color: #ffe600;
+    border: 1px solid rgba(0,0,0,0.35);
+  }
+
+#footer {
+  position: fixed;
+  display: flex;
+  height: 8vh;
+  bottom: 0px;
+  left: 0px;
+  flex-shrink: 0;
+  right: 0px;
+  display: block;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: #00984a;
+}
+
+#footer button {
+  background: transparent;
+  margin-top: 3px;
+  border-width: 0px;
+  color: white;
+  height: 5vh;
+  font-size: 25px;
+}
