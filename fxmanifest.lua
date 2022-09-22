@@ -1,19 +1,26 @@
 fx_version 'adamant'
 game 'gta5'
 
+name "smartphone-app"
+description "Additional Smartphone App compatible with JesterOS and Alternative vRP."
+version "1.1"
+url "https://github.com/vitorsubhi/Smartphone-Apps"
+author "vitorsubhi"
+
 files {
   '**/**/*'
 }
 
-client_scripts {
+shared_scripts {
+	"@vrp/lib/vehicles.lua",
 	"@vrp/lib/utils.lua",
-  'client-side/**/*.lua',
-  'shared/**/*.lua'
+	"shared/**/**/*.lua"
+}
+
+client_scripts {
+	"client-side/**/*.lua"
 }
 
 server_scripts {
-	"@vrp/lib/vehicles.lua",
-	"@vrp/lib/utils.lua",
-  'server-side/**/*.lua',
-  'shared/**/*.lua'
+	"server-side/**/*.lua"
 }
