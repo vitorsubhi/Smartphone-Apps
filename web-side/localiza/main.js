@@ -32,7 +32,7 @@ const benefactor = (mode) => {
       document.getElementById("pageVehicles").innerHTML =`
         ${nameList.map((item) => (`<div id="vehicle">
           <div id="vleft">
-          <img src="https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/${item['k']}.png" onerror="this.onerror=null; this.src='http://yeahrp.com/vehicles/default.png'"/>
+          <img src="https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/${item['k']}.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/default.png'"/>
           </div>
           <div id="vright">
             <div id="vright_top">
@@ -53,7 +53,7 @@ const benefactor = (mode) => {
       document.getElementById("pageVehicles").innerHTML =`
         ${nameList.map((item) => (`<div id="vehicle">
           <div id="vleft">
-          <img src="https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/${item['k']}.png" onerror="this.onerror=null; this.src='http://yeahrp.com/vehicles/default.png'"/>
+          <img src="https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/${item['k']}.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/vitorsubhi/Alternative_Misc/master/vehicles/default.png'"/>
           </div>
           <div id="vright">
             <div id="vright_top">
