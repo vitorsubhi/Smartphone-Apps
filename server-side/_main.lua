@@ -7,8 +7,8 @@ vRP = Proxy.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CONNECTION
 -----------------------------------------------------------------------------------------------------------------------------------------
-cRP = {}
-Tunnel.bindInterface("smartphone-app",cRP)
+aRP = {}
+Tunnel.bindInterface("smartphone-app",aRP)
 vCLIENT = Tunnel.getInterface("smartphone-app")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- VARIABLES
@@ -19,7 +19,7 @@ typeBikes = {}
 typeWorks = {}
 typeRental = {}
 
-local version = 1.0
+local version = 1.1
 PerformHttpRequest("https://raw.githubusercontent.com/vitorsubhi/Smartphone-Apps/master/version.lua",function(err,text,headers)
 	if err == 200 then
 		text = string.gsub(text,"return ","")

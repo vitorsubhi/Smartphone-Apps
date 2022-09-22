@@ -19,7 +19,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REQUESTPOSSUIDOS
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.requestPossuidos()
+function aRP.requestPossuidos()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -40,7 +40,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REQUESTTAX
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.requestTax(vehName)
+function aRP.requestTax(vehName)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -62,7 +62,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REQUESTRENTAL
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.requestRental(vehName)
+function aRP.requestRental(vehName)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -103,7 +103,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- RENTALMONEY
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.rentalMoney(vehName)
+function aRP.rentalMoney(vehName)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -144,7 +144,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REQUESTBUY
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.requestBuy(vehName)
+function aRP.requestBuy(vehName)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -204,7 +204,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REQUESTSELL
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.requestSell(vehName)
+function aRP.requestSell(vehName)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -254,7 +254,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 local plateVehs = {}
 local numberName = 1000
-function cRP.startDrive()
+function aRP.startDrive()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -287,7 +287,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REMOVEDRIVE
 -----------------------------------------------------------------------------------------------------------------------------------------
-function cRP.removeDrive()
+function aRP.removeDrive()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then

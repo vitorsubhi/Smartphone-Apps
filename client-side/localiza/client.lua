@@ -34,7 +34,7 @@ AddEventHandler("smartphone-app:updateVehicles",function(Cars,Bikes,Works,Rental
 	typeRental = Rental
 end)
 
-function cRP.updateVehicles(Cars,Bikes,Works,Rental)
+function aRP.updateVehicles(Cars,Bikes,Works,Rental)
 	typeCars = Cars
 	typeBikes = Bikes
 	typeWorks = Works

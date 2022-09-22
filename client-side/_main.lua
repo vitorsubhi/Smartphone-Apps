@@ -8,6 +8,6 @@ vRP = Proxy.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CONNECTION
 -----------------------------------------------------------------------------------------------------------------------------------------
-cRP = {}
-Tunnel.bindInterface("smartphone-app",cRP)
+aRP = {}
+Tunnel.bindInterface("smartphone-app",aRP)
 vSERVER = Tunnel.getInterface("smartphone-app")
