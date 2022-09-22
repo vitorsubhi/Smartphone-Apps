@@ -20,7 +20,7 @@ typeWorks = {}
 typeRental = {}
 
 local version = module("version")
-PerformHttpRequest("https://raw.githubusercontent.com/vitorsubhi/Smartphone-Apps/version.lua",function(err,text,headers)
+PerformHttpRequest("https://raw.githubusercontent.com/vitorsubhi/Smartphone-Apps/master/version.lua",function(err,text,headers)
 	if err == 200 then
 		text = string.gsub(text,"return ","")
 		local r_version = tonumber(text)
