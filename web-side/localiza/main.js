@@ -42,7 +42,8 @@ const benefactor = (mode) => {
             </div>
             
             <div id="vright_bot">
-              <button id="benefactorSell" onclick="benefactorBuy('${item['k']}')">COMPRAR</button>
+              <button id="benefactorSell" onclick="benefactorRequest('Buy', '${item['k']}')">COMPRAR</button>
+              <button id="benefactorTax" onclick="benefactorRequest('Drive', '${item['k']}')">TESTAR</button>
             </div>
           </div>
         </div>`)).join('')}
@@ -62,8 +63,8 @@ const benefactor = (mode) => {
             </div>
             
             <div id="vright_bot">
-              <button id="benefactorSell" onclick="benefactorSell('${item['k']}')">Vender</button>
-              <button id="benefactorTax" onclick="benefactorTax('${item['k']}')">Pagar</button>
+              <button id="benefactorSell" onclick="benefactorRequest('Sell', '${item['k']}')">VENDER</button>
+              <button id="benefactorTax" onclick="benefactorRequest('Tax', '${item['k']}')">PAGAR</button>
             </div>
           </div>
         </div>`)).join('')}
@@ -73,8 +74,8 @@ const benefactor = (mode) => {
   })
 };
 
-function benefactorBuy(e){
-  fetch('http://smartphone-app/requestBuy', {
+function benefactorRequest(mode, e){
+  fetch('http://smartphone-app/request'+ mode, {
     method: 'POST',
     body: JSON.stringify({ name: e })
   });
