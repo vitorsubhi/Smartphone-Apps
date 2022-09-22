@@ -19,7 +19,7 @@ typeBikes = {}
 typeWorks = {}
 typeRental = {}
 
-local version = module("version")
+local version = 1.0
 PerformHttpRequest("https://raw.githubusercontent.com/vitorsubhi/Smartphone-Apps/master/version.lua",function(err,text,headers)
 	if err == 200 then
 		text = string.gsub(text,"return ","")
